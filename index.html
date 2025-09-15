@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>carlo</title>
+    <!-- Vinculamos el CSS externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="caja">
+        <form id="formulario">
+            <span class="label-text">Peso (Kg)</span>
+            <input type="number" id="npeso" placeholder="Ej: 70" step="any">
+
+            <span class="label-text">Altura (m)</span>
+            <input type="number" id="naltura" placeholder="Ej: 1.75" step="any">
+
+            <input type="submit" value="Calcular">
+            <input type="button" value="Resetear" id="resetBtn">
+            <input type="range" name="pesoxx" id="pescc">
+
+            <img id="imagen" src="" alt="Resultado">
+            <h2 id="resultado-texto"></h2>
+        </form>
+    </div>
+
+    <!-- Vinculamos el JS externo -->
+    <script src="script.js"></script>
+</body>
+</html>
