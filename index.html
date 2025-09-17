@@ -1,31 +1,55 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <!-- Indicamos que el documento es HTML5 -->
+<html lang="en"> <!-- Abre el documento HTML, idioma en inglés -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>carlo</title>
-    <!-- Vinculamos el CSS externo -->
+    <meta charset="UTF-8"> <!-- Permite usar acentos, ñ y caracteres especiales -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <!-- Hace que la página se adapte al tamaño de la pantalla (responsivo) -->
+
+    <title>carlo</title> <!-- Título que aparece en la pestaña del navegador -->
+
+    <!-- Conectamos el archivo de estilos CSS externo -->
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div id="caja">
-        <form id="formulario">
-            <span class="label-text">Peso (Kg)</span>
-            <input type="number" id="npeso" placeholder="Ej: 70" step="any">
+<body> <!-- Aquí comienza el contenido visible de la página -->
 
+    <div id="caja"> <!-- Un contenedor general para agrupar todo -->
+        
+        <form id="formulario"> <!-- Formulario con ID "formulario" -->
+            
+            <!-- Etiqueta para el campo de peso -->
+            <span class="label-text">Peso (Kg)</span>
+            <!-- Campo para ingresar el peso en kilogramos -->
+            <input type="number" id="npeso" placeholder="Ej: 70" step="any">
+            <!-- type="number" → solo números 
+                 id="npeso" → para identificarlo en JS
+                 placeholder → texto de ejemplo
+                 step="any" → permite números decimales -->
+
+            <!-- Etiqueta para el campo de altura -->
             <span class="label-text">Altura (m)</span>
+            <!-- Campo para ingresar la altura en metros -->
             <input type="number" id="naltura" placeholder="Ej: 1.75" step="any">
 
+            <!-- Botón que envía el formulario y dispara el cálculo -->
             <input type="submit" value="Calcular">
+
+            <!-- Botón que resetea los valores (lo manejará JS) -->
             <input type="button" value="Resetear" id="resetBtn">
+
+            <!-- Barra deslizante (slider) para probar valores de peso -->
             <input type="range" name="pesoxx" id="pescc">
 
+            <!-- Imagen que se actualizará según el resultado -->
             <img id="imagen" src="" alt="Resultado">
-            <h2 id="resultado-texto"></h2>
-        </form>
-    </div>
 
-    <!-- Vinculamos el JS externo -->
+            <!-- Aquí aparecerá el texto del resultado -->
+            <h2 id="resultado-texto"></h2>
+        
+        </form> <!-- Cierra formulario -->
+    </div> <!-- Cierra caja -->
+
+    <!-- Conectamos el archivo JavaScript externo -->
     <script src="script.js"></script>
+
 </body>
 </html>

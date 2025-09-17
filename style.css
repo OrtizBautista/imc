@@ -1,89 +1,99 @@
+/* -------------------- ESTILO DEL BODY -------------------- */
 body {
-    background-image: url("./img/kyojuro background.jpeg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-    padding: 20px;
-    box-sizing: border-box;
-    flex-direction: column;
+    background-image: url("./img/kyojuro background.jpeg"); /* Imagen de fondo */
+    background-size: cover;         /* La imagen cubre todo el área disponible */
+    background-position: center;    /* Centra la imagen en la pantalla */
+    background-repeat: no-repeat;   /* No repite la imagen */
+    display: flex;                  /* Usamos Flexbox para centrar contenido */
+    justify-content: center;        /* Centra horizontalmente los elementos hijos */
+    align-items: center;            /* Centra verticalmente los elementos hijos */
+    min-height: 100vh;              /* Altura mínima = altura de la ventana */
+    margin: 0;                       /* Eliminamos márgenes por defecto */
+    padding: 20px;                  /* Espacio interno del body */
+    box-sizing: border-box;         /* Incluye padding en el cálculo de width/height */
+    flex-direction: column;         /* Los elementos se apilan en columna */
 }
 
+/* -------------------- CAJA PRINCIPAL -------------------- */
 #caja {
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    max-width: 90%;
-    width: 400px;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo negro semitransparente */
+    padding: 20px;                         /* Espacio interno */
+    border-radius: 10px;                   /* Bordes redondeados */
+    text-align: center;                     /* Centra texto dentro de la caja */
+    max-width: 90%;                         /* No se pasa del 90% del ancho de la pantalla */
+    width: 400px;                           /* Ancho fijo máximo */
 }
 
+/* -------------------- FORMULARIO -------------------- */
 form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: flex;               /* Usamos Flexbox para organizar inputs */
+    flex-direction: column;      /* Los inputs se apilan verticalmente */
+    align-items: center;         /* Centra los inputs horizontalmente */
 }
 
+/* -------------------- ESTILO GENERAL DE INPUT -------------------- */
 input {
-    background-color: yellow;
-    color: red;
-    display: block;
-    margin: 10px;
-    padding: 8px;
-    border: 1px solid orangered;
-    width: 200px;
-    box-sizing: border-box;
+    background-color: yellow;    /* Fondo amarillo */
+    color: red;                  /* Texto rojo */
+    display: block;              /* Se comporta como bloque (se puede usar margin auto) */
+    margin: 10px;                /* Espacio externo */
+    padding: 8px;                /* Espacio interno */
+    border: 1px solid orangered; /* Borde naranja intenso */
+    width: 200px;                /* Ancho de cada input */
+    box-sizing: border-box;      /* Incluye padding en width */
 }
 
+/* -------------------- BOTONES DE SUBMIT Y RESET -------------------- */
 input[type="submit"],
 input[type="button"] {
-    background-color: red;
-    color: yellow;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-top: 10px;
-    font-weight: bold;
-    width: auto;
+    background-color: red;       /* Fondo rojo */
+    color: yellow;               /* Texto amarillo */
+    border: none;                /* Sin borde */
+    padding: 10px 20px;          /* Espacio interno */
+    cursor: pointer;             /* Cambia el cursor al pasar por encima */
+    border-radius: 5px;          /* Bordes redondeados */
+    margin-top: 10px;            /* Separación superior */
+    font-weight: bold;           /* Texto en negrita */
+    width: auto;                 /* Ancho automático según contenido */
 }
 
+/* -------------------- SLIDER (RANGE) -------------------- */
 input[type="range"] {
-    width: 200px;
-    margin: 10px auto;
-    display: block;
+    width: 200px;                /* Ancho de la barra deslizante */
+    margin: 10px auto;           /* Separación y centrado horizontal */
+    display: block;              /* Mostrar como bloque */
 }
 
+/* -------------------- RESULTADO (H2) -------------------- */
 h2 {
-    color: white;
-    margin-top: 20px;
-    font-size: 1.5em;
+    color: white;                /* Texto blanco */
+    margin-top: 20px;            /* Separación superior */
+    font-size: 1.5em;            /* Tamaño del texto */
 }
 
+/* -------------------- LABEL DEL FORMULARIO -------------------- */
 .label-text {
-    color: white;
-    font-weight: bold;
-    font-size: 1.2em;
+    color: white;                /* Texto blanco */
+    font-weight: bold;           /* Texto en negrita */
+    font-size: 1.2em;            /* Tamaño ligeramente más grande */
 }
 
+/* -------------------- IMAGEN -------------------- */
 img {
-    max-width: 60%;
-    margin-top: 20px;
-    display: none;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
+    max-width: 60%;              /* No supera el 60% del ancho del contenedor */
+    margin-top: 20px;            /* Separación superior */
+    display: none;               /* Oculta la imagen por defecto */
+    margin-left: auto;           /* Centrado horizontal */
+    margin-right: auto;          /* Centrado horizontal */
+    height: auto;                /* Mantiene proporciones */
 }
 
+/* -------------------- ANIMACIÓN FADE-IN -------------------- */
 .fade-in {
-    animation: fadeIn 0.5s ease-in-out;
+    animation: fadeIn 0.5s ease-in-out; /* Aplica animación definida abajo */
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from { opacity: 0; }          /* Comienza invisible */
+    to { opacity: 1; }            /* Termina completamente visible */
 }
