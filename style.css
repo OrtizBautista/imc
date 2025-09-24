@@ -1,5 +1,6 @@
 /* -------------------- ESTILO DEL BODY -------------------- */
 body {
+     font-family: 'Roboto', sans-serif; /* Fuente */
     background-image: url("./img/kyojuro background.jpeg"); /* Imagen de fondo */
     background-size: cover;         /* La imagen cubre todo el área disponible */
     background-position: center;    /* Centra la imagen en la pantalla */
@@ -13,6 +14,33 @@ body {
     box-sizing: border-box;         /* Incluye padding en el cálculo de width/height */
     flex-direction: column;         /* Los elementos se apilan en columna */
 }
+#titulo{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    align-self: start;
+    color: white;
+    font-size: 15px;
+}
+#link:link,
+#link:visited {
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+}
+#link:hover {
+    color: darkred;
+    text-decoration: underline;
+}
+#link{
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    align-self: start;
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+    font-size: 15px;
+}
+
 
 /* -------------------- CAJA PRINCIPAL -------------------- */
 #caja {
