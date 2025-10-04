@@ -84,6 +84,16 @@ input[type="button"] {
     font-weight: bold;           /* Texto en negrita */
     width: auto;                 /* Ancho automático según contenido */
 }
+input[type="button"]:hover{
+    animation: flameButtonHover 1s infinite alternate;
+    cursor: pointer;
+}
+@keyframes flameButtonHover {
+    0% { box-shadow: 0 0 10px yellow, 0 0 20px orange, 0 0 30px red; }
+    50% { box-shadow: 0 0 15px yellow, 0 0 25px orange, 0 0 35px red; }
+    100% { box-shadow: 0 0 10px yellow, 0 0 20px orange, 0 0 30px red; }
+}
+
 
 /* -------------------- SLIDER (RANGE) -------------------- */
 input[type="range"] {
@@ -124,4 +134,27 @@ img {
 @keyframes fadeIn {
     from { opacity: 0; }          /* Comienza invisible */
     to { opacity: 1; }            /* Termina completamente visible */
+}
+a{
+    color: red;
+}
+
+#Calcular:hover{
+    animation: flameButtonHover 1s infinite alternate;
+    cursor: pointer;
+}
+@keyframes flameButtonHover {
+    0% { box-shadow: 0 0 10px yellow, 0 0 20px orange, 0 0 30px red; }
+    50% { box-shadow: 0 0 15px yellow, 0 0 25px orange, 0 0 35px red; }
+    100% { box-shadow: 0 0 10px yellow, 0 0 20px orange, 0 0 30px red; }
+}
+input:focus {
+    outline: none;
+    animation: flameInput 1s infinite alternate;
+}
+
+@keyframes flameInput {
+    0% { box-shadow: 0 0 10px red, 0 0 20px orange, 0 0 30px yellow; }
+    50% { box-shadow: 0 0 15px red, 0 0 25px orange, 0 0 35px yellow; }
+    100% { box-shadow: 0 0 10px red, 0 0 20px orange, 0 0 30px yellow; }
 }
